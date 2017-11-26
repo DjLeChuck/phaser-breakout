@@ -1,0 +1,324 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "Level",
+    "sceneWidth": 800,
+    "sceneHeight": 600,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "stepWidth": 24,
+    "stepHeight": 24,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true,
+    "create_before": "this.initScene();",
+    "create_after": "this.handleGameLogic();"
+  },
+  "stateSettings": {
+    "pageAlignHorizontally": true,
+    "pageAlignVertically": true,
+    "stageBackgroundColor": [
+      255,
+      255,
+      255
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "8a0fc0bc-e3be-4656-9585-f855ac8ba0bb",
+    "info": {
+      "editorName": "Level",
+      "setAll": [],
+      "children": [
+        {
+          "type": "group",
+          "id": "f0e9b43a-8944-404a-86f7-c4ff1484b72d",
+          "info": {
+            "editorName": "walls",
+            "editorPublic": true,
+            "physicsGroup": true,
+            "setAll": [{
+              "key": "body.immovable",
+              "value": "true"
+            }],
+            "children": [
+              {
+                "type": "tileSprite",
+                "id": "1db6eb42-e1fc-4965-9ff5-654fe5f84430",
+                "asset": "0",
+                "info": {
+                  "editorName": "wallRight",
+                  "x": 800,
+                  "y": 72,
+                  "width": 24,
+                  "height": 552
+                }
+              },
+              {
+                "type": "tileSprite",
+                "id": "0f4ad6fc-0a88-4612-9dc0-187cfd22ba37",
+                "asset": "0",
+                "info": {
+                  "editorName": "wallLeft",
+                  "x": -24,
+                  "y": 72,
+                  "width": 24,
+                  "height": 552
+                }
+              },
+              {
+                "type": "tileSprite",
+                "id": "a40fb9e1-e5cf-47d6-807c-c0cd8db8df55",
+                "asset": "0",
+                "info": {
+                  "editorName": "wallTop",
+                  "x": -24,
+                  "y": -24,
+                  "width": 840,
+                  "height": 96
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "id": "89d5f5fc-acbd-454a-a6d6-8a5887991c58",
+          "info": {
+            "editorName": "scoreLabel",
+            "x": 200,
+            "y": 10,
+            "text": "Score :",
+            "style.fontSize": 40,
+            "style.fill": "#ff0000"
+          }
+        },
+        {
+          "type": "text",
+          "id": "5eb3b65c-6720-48a1-bdba-82a2e8a5ca1d",
+          "info": {
+            "editorName": "score",
+            "editorPublic": true,
+            "x": 344,
+            "y": 12,
+            "text": "0",
+            "style.fontSize": 40,
+            "style.fill": "#ff0000"
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "0",
+          "id": "9a51f6fd-17b8-471a-b490-3dc6fa72417a",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "atlas",
+            "asset": "btnBack",
+            "sprite": "0"
+          },
+          "info": {
+            "editorName": "btnBack",
+            "x": 12,
+            "y": 12
+          }
+        },
+        {
+          "type": "group",
+          "id": "56e82c3c-f875-4cae-8430-f56100942bd1",
+          "info": {
+            "editorName": "lifes",
+            "editorPublic": true,
+            "x": 675,
+            "y": 20,
+            "editorClosed": true,
+            "setAll": [],
+            "children": []
+          }
+        },
+        {
+          "type": "group",
+          "id": "d07d23c8-b611-4639-b604-534a40d8f49a",
+          "info": {
+            "editorName": "bricks",
+            "editorPublic": true,
+            "x": 360,
+            "y": 120,
+            "editorClosed": true,
+            "physicsGroup": true,
+            "setAll": [{
+              "key": "body.immovable",
+              "value": "true"
+            }],
+            "children": [
+              {
+                "type": "atlas-sprite",
+                "id": "8f9777a3-1600-4436-94e6-fd0196ec3c64",
+                "asset": "1",
+                "info": {
+                  "editorName": "one_png",
+                  "x": -120,
+                  "y": 24,
+                  "data": "{\r\n\"isBreakable\": true,\r\n\"nbTouch\": 1,\r\n\"nbPoints\": 2\r\n}"
+                }
+              },
+              {
+                "type": "atlas-sprite",
+                "id": "6863781a-6aa3-4adb-928f-07d9cacde7be",
+                "asset": "2",
+                "info": {
+                  "editorName": "two_png",
+                  "x": -48,
+                  "y": 24,
+                  "data": "{\r\n\"isBreakable\": true,\r\n\"nbTouch\": 2,\r\n\"nbPoints\": 4\r\n}"
+                }
+              },
+              {
+                "type": "atlas-sprite",
+                "id": "a9a768b7-8da3-4702-9fb1-6128f6856c44",
+                "asset": "3",
+                "info": {
+                  "editorName": "three_png",
+                  "x": 24,
+                  "y": 24,
+                  "data": "{\r\n\"isBreakable\": true,\r\n\"nbTouch\": 3,\r\n\"nbPoints\": 6\r\n}"
+                }
+              },
+              {
+                "type": "atlas-sprite",
+                "id": "4a0a9410-39b9-4c4a-8108-2d27ee5e0f0b",
+                "asset": "4",
+                "info": {
+                  "editorName": "four_png",
+                  "x": 96,
+                  "y": 24,
+                  "data": "{\r\n\"isBreakable\": true,\r\n\"nbTouch\": 4,\r\n\"nbPoints\": 8\r\n}"
+                }
+              },
+              {
+                "type": "atlas-sprite",
+                "id": "2d5fd366-adb5-43ac-983c-aae91ded61f3",
+                "asset": "5",
+                "info": {
+                  "editorName": "unbreakable_png",
+                  "x": 168,
+                  "y": 24,
+                  "data": "{\r\n\"isBreakable\": false\r\n}"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "id": "3c08f502-b44c-47e8-8c52-211359672788",
+          "asset": "6",
+          "info": {
+            "editorName": "pad",
+            "editorPublic": true,
+            "x": 384,
+            "y": 528,
+            "anchor.x": 0.5,
+            "anchor.y": 0.5,
+            "data": "{\r\n\"lifes\": 3\r\n}",
+            "body": {
+              "type": "ARCADE_RECT",
+              "offsetX": 1.61505126953125,
+              "offsetY": 1.61505126953125,
+              "immovable": true,
+              "collideWorldBounds": true,
+              "bounceX": 1,
+              "bounceY": 1,
+              "width": 100.63934326171875,
+              "height": 20.7698974609375
+            }
+          }
+        },
+        {
+          "type": "image",
+          "id": "0dc7f406-7084-4768-ac21-e90558a2510f",
+          "asset": "7",
+          "info": {
+            "editorName": "ball",
+            "editorPublic": true,
+            "x": 384,
+            "y": 500,
+            "anchor.x": 0.5,
+            "anchor.y": 0.5,
+            "data": "{\r\n\"isOnPad\": true\r\n}",
+            "body": {
+              "type": "ARCADE_CIRCLE",
+              "collideWorldBounds": true,
+              "bounceX": 1,
+              "bounceY": 1,
+              "radius": 12
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {
+    "0": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "gui",
+      "sprite": "wall.png"
+    },
+    "1": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "bricks",
+      "sprite": "one.png"
+    },
+    "2": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "bricks",
+      "sprite": "two.png"
+    },
+    "3": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "bricks",
+      "sprite": "three.png"
+    },
+    "4": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "bricks",
+      "sprite": "four.png"
+    },
+    "5": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "bricks",
+      "sprite": "unbreakable.png"
+    },
+    "6": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "pad"
+    },
+    "7": {
+      "file": "WebContent/assets/pack.json",
+      "section": "atlas",
+      "asset": "ball"
+    }
+  },
+  "prefab-table": {"0": "WebContent/assets/canvas/btnBack.canvas"}
+}

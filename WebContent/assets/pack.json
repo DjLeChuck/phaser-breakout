@@ -1,0 +1,67 @@
+{
+  "atlas": [
+    {
+      "type": "image",
+      "key": "ball",
+      "url": "assets/images/ball.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "pad",
+      "url": "assets/images/pad.png",
+      "overwrite": false
+    },
+    {
+      "type": "spritesheet",
+      "key": "btnPlay",
+      "url": "assets/images/btn/btnPlay.png",
+      "frameWidth": 105,
+      "frameHeight": 48,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "btnBack",
+      "url": "assets/images/btn/btnBack.png",
+      "frameWidth": 130,
+      "frameHeight": 48,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "btnQuit",
+      "url": "assets/images/btn/btnQuit.png",
+      "frameWidth": 105,
+      "frameHeight": 48,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "atlas",
+      "key": "gui",
+      "textureURL": "assets/textures/gui.png",
+      "atlasURL": "assets/textures/gui.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "bricks",
+      "textureURL": "assets/textures/bricks.png",
+      "atlasURL": "assets/textures/bricks.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    }
+  ],
+  "meta": {
+    "generated": "1511687281107",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}

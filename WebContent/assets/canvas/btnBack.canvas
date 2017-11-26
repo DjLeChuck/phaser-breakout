@@ -1,0 +1,61 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "btnBack",
+    "sceneWidth": 130,
+    "sceneHeight": 48,
+    "generateOnSave": true,
+    "enableStepping": false,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.Button",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "7035d5e5-92aa-43e9-b6c0-3096c4c8df11",
+    "info": {
+      "editorName": "root",
+      "setAll": [],
+      "children": [{
+        "type": "button",
+        "id": "7a9ca3c1-6b86-423a-b182-41cd09376aad",
+        "asset": "0",
+        "info": {
+          "editorName": "btnBack",
+          "callback": "this.goToMenu",
+          "overFrame": "1",
+          "downFrame": "2"
+        }
+      }]
+    }
+  },
+  "type": "SPRITE",
+  "asset-table": {"0": {
+    "file": "WebContent/assets/pack.json",
+    "section": "atlas",
+    "asset": "btnBack",
+    "sprite": "0"
+  }},
+  "prefab-table": {}
+}

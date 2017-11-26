@@ -1,0 +1,100 @@
+{
+  "canvas-version": 2,
+  "settings": {
+    "className": "GameOver",
+    "sceneWidth": 800,
+    "sceneHeight": 600,
+    "generateOnSave": true,
+    "enableStepping": true,
+    "lang": "JAVA_SCRIPT",
+    "baseClass": "Phaser.State",
+    "backgroundColor": [
+      180,
+      180,
+      180
+    ],
+    "gridColor": [
+      200,
+      200,
+      200
+    ],
+    "showGrid": true
+  },
+  "stateSettings": {
+    "pageAlignHorizontally": true,
+    "pageAlignVertically": true,
+    "stageBackgroundColor": [
+      0,
+      0,
+      0
+    ],
+    "autoLoad": true,
+    "preloadSpriteId": "",
+    "preloadSprite_direction": 0,
+    "load.pack": []
+  },
+  "world": {
+    "type": "group",
+    "id": "e6e5b3c9-e5a4-4b8a-9918-d124aa3f517c",
+    "info": {
+      "editorName": "GameOver",
+      "setAll": [],
+      "children": [
+        {
+          "type": "text",
+          "id": "847e32be-74d0-48cc-b11f-460fa3ba9eb6",
+          "info": {
+            "editorName": "text",
+            "x": 352,
+            "y": 64,
+            "anchor.x": 0.5,
+            "anchor.y": 0.5,
+            "text": "GAME OVER",
+            "style.fontSize": 60,
+            "style.fill": "#ff0000",
+            "style.stroke": "#ff8080",
+            "style.strokeThickness": 3
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "0",
+          "id": "26905b52-0148-4e8f-930d-757adf33260b",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "menu",
+            "asset": "btnPlay",
+            "sprite": "0"
+          },
+          "info": {
+            "editorName": "btnPlay",
+            "x": 288,
+            "y": 192
+          }
+        },
+        {
+          "type": "prefab",
+          "prefab": "1",
+          "id": "c319f403-26ae-47b9-a8ef-3c845cab9b31",
+          "asset-ref": {
+            "file": "WebContent/assets/pack.json",
+            "section": "menu",
+            "asset": "btnQuit",
+            "sprite": "0"
+          },
+          "info": {
+            "editorName": "btnQuit",
+            "x": 288,
+            "y": 320
+          }
+        }
+      ]
+    }
+  },
+  "type": "STATE",
+  "asset-table": {},
+  "prefab-table": {
+    "0": "WebContent/assets/canvas/btnPlay.canvas",
+    "1": "WebContent/assets/canvas/btnQuit.canvas"
+  }
+}
